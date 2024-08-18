@@ -3,8 +3,8 @@ from data_parser import DataParser
 
 class UserInterface:
     def __init__(self):
-        self.fetch = WeatherDataFetcher
-        self.parser = DataParser
+        self.fetch = WeatherDataFetcher()
+        self.parser = DataParser()
 
     def get_detailed_forecast(self,city):
         data = self.fetch.fetch_weather(city)
